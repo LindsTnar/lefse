@@ -268,7 +268,7 @@ def modify_feature_names(fn):
         ret = [re.sub(v,"",f) for f in ret]
 
     for v in ["/",r'\(',r'\)',r'-',r'\+',r'=',r'{',r'}',r'\[',r'\]',
-              r',',r'\.',r';',r':',r'\?',r'\<',r'\>',r'\.',r'\,']:
+              r',',r';',r':',r'\?',r'\<',r'\>',r'\,']:
         ret = [re.sub(v,"_",f) for f in ret]
 
     for v in ["\|"]:
